@@ -27,5 +27,5 @@ echo "[OK] Memoria disponível: $(free -m | grep Mem | awk '{print $7}') MB"
 
 # 4) Quantidade de processos
 echo "[OK] Processos rodando: $(ps aux | wc -l)"
-
+echo "[OK] Tempo ligado: $(uptime -p)"
 echo "=== Fim do health check ==="
